@@ -1,4 +1,3 @@
-#Password-generator-Test
 This is my first official repo in GitHub
 
 Some time ago I programmed a password generator in Python using the secrets.choice() method from the secrets module which
@@ -13,6 +12,3 @@ The test consists of 3 main processes:
 3) Searching the first password in the list using the Binary Search algorithm.
 
 As a plus I used the time.time() method to print the time it takes the computer to  perform this processes.
-
-
-
