@@ -11,3 +11,8 @@ def generate_password(n):
     for i in range(n):
         password += secrets.choice(characters)
     return password
+
+if __name__ == "__main__":
+    num = int(input("How many characters long?: "))
+    password = generate_password(num)
+    print("Your password is: " + password)
