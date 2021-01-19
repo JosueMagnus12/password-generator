@@ -4,28 +4,25 @@ import password_generator
 import time
 
 def main():
-    #prompt
-    n_char = int(input("How many characters in the passwords? (a strong password contains at least 10 characters): "))
-    n_pass = int(input("How many passwords for the test? (big numbers are recommended): "))
-
+   
     #creating the first password and the list
-    my_password = password_generator.generate_password(n_char)
-    passwords = [0] * n_pass
+    my_password = password_generator.generate_password(18)
+    passwords = [0] * 10_000_000
 
     #filling the list up
     start = time.time()
-    for i in range(n_pass):
-        passwords[i] = password_generator.generate_password(n_char)
+    for i in range(10_000_000):
+        passwords[i] = password_generator.generate_password(18)
     end = time.time()
 
     #sorting the list
     start2 = time.time()
-    merge_sort.merge_sort(passwords,0,n_pass - 1)
+    merge_sort.merge_sort(passwords,0,999_999)
     end2 = time.time()
 
     #searching the password
     start3 = time.time()
-    result = binary_search.binary_search(passwords,0,n_pass - 1,my_password)
+    result = binary_search.binary_search(passwords,0,999_999,my_password)
     end3 = time.time()
 
     #results
