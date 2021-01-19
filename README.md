@@ -1,6 +1,6 @@
 This is my first official repo on GitHub
 
-Some time ago I programmed a password generator in Python using the secrets.choice() method from the secrets module which
+Some time ago I programmed a password generator in Python using the secrets module which
 is suitable for crypto stuff. To prove it I built this 'test'.
 
 It checks if at some point the generator repeats passwords.
