@@ -26,6 +26,10 @@ def main():
     end3 = time.time()
 
     #results
+    total_time_filling = round(end - start,5)
+    total_time_sorting = round(end2 - start2,5)
+    total_time_searching = round(end3 - start3,5)
+
     print(passwords)
     print("Your password is: " + my_password)
 
@@ -33,10 +37,6 @@ def main():
         print("Insecure generator")
     else:
         print("Secure generator")
-
-    total_time_filling = round(end - start,5)
-    total_time_sorting = round(end2 - start2,5)
-    total_time_searching = round(end3 - start3,5)
 
     print("Filling time: {}s".format(total_time_filling))
     print("Sorting time: {}s".format(total_time_sorting))
