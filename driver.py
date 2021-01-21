@@ -43,4 +43,5 @@ def main():
     print("Searching time: {}s".format(total_time_searching))
 
 if __name__ == "__main__":
+    print("hello")
     main()
