@@ -11,4 +11,4 @@ The test consists of 3 main processes:
 2) Sorting that list using the Merge Sort algorithm.
 3) Searching the first password in the list using the Binary Search algorithm.
 
-As a plus I used the time.time() method to print the time it takes the computer to  perform these processes.
+As a plus I used the time module to print the time it takes the computer to  perform these processes.
