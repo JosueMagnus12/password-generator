@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is my first official repo on GitHub 👽
+=======
+## This is my first official repo on GitHub 👽
+>>>>>>> 3c9260b6e4be9560e33fa2ee671ce86f649e2c1a
 
 Some time ago I programmed a password generator in Python using the **secrets** module which is suitable for crypto stuff. To prove it I built this 'test'.
 
