@@ -4,20 +4,17 @@ import password_generator
 import time
 
 def main():
-   
-    #creating the first password and the list
+    #creating the first password
     my_password = password_generator.generate_password(18)
-    passwords = [0] * 10_000_000
 
     #filling the list up
     start = time.time()
-    for i in range(10_000_000):
-        passwords[i] = password_generator.generate_password(18)
+    passwords = [password_generator.generate_password(18) for i in range(1_000_000)]
     end = time.time()
 
     #sorting the list
     start2 = time.time()
-    merge_sort.merge_sort(passwords,0,999_999)
+    merge_sort.merge_sort(passwords)
     end2 = time.time()
 
     #searching the password
